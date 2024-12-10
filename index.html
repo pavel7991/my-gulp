@@ -9,16 +9,42 @@
 </head>
 
 <body>
-  <header>
-    <h1>Header</h1>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Welcome to the Simple Text Page</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#" class="header__link">Home</a></li>
+          <li><a href="#" class="header__link">About</a></li>
+          <li><a href="#" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="test">Test</div>
+  <main class="main">
+    <div class="container">
+      <section class="text-block">
+        <h2 class="text-block__title">About Us</h2>
+        <p class="text-block__content">
+          This is a simple text page designed to showcase basic HTML and SCSS structure. It includes a header, text
+          blocks, and a footer.
+        </p>
+      </section>
+
+      <section class="text-block">
+        <h2 class="text-block__title">Our Mission</h2>
+        <p class="text-block__content">
+          Our mission is to make learning web development accessible and enjoyable for everyone.
+        </p>
+      </section>
+    </div>
   </main>
 
-  <footer>
-    <h2>Footer</h2>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2024 Simple Text Page. All rights reserved.</p>
+    </div>
   </footer>
 
 

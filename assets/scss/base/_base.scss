@@ -1,0 +1,16 @@
+@use "../variables" as *;
+
+body {
+  margin: 0;
+
+  color: $text-color;
+
+  font-family: $font-family;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

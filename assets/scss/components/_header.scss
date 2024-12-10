@@ -1,19 +1,44 @@
-@use "mixins/" as *;
-@use "variables/" as *;
+@use "../variables" as *;
+@use "../mixins" as *;
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
+.header {
+  padding: 1rem 0;
 
-  width: 100%;
-  padding: 20px;
-
-  text-align: center;
-
-  background-color: $heder-bg;
+  color: #ffffff;
+  background-color: aquamarine;
 
   @include ul-min {
-    background-color: yellow;
+    background-color: $primary-color;
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+  }
+
+  &__nav {
+    margin-top: 1rem;
+
+    .header__menu {
+      display: flex;
+      justify-content: center;
+
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+
+      gap: 1rem;
+
+      .header__link {
+        text-decoration: none;
+
+        color: #ffffff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
