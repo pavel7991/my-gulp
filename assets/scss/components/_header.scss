@@ -1,0 +1,19 @@
+@use "mixins/" as *;
+@use "variables/" as *;
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: $heder-bg;
+
+  @include ul-min {
+    background-color: yellow;
+  }
+}
